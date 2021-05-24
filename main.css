@@ -1,0 +1,91 @@
+/* *{
+background-color: -moz-linear-gradient(360deg, #38aecc 10%, #347fb9 360%); } */
+
+
+body{
+    /* background-color:linear-gradient(rgba(216, 11, 11, 0.747),) ; */
+    background-image: url(unnamed.jpg);
+    height: 70rem;
+}
+.aboutus{
+  float: right;
+  margin-right: 25px;
+  margin-top: 30px;
+}
+.heading
+{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+
+        color: #fff;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6004d, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #edf030, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+
+
+#body{
+    width: 45%;
+   /* padding: 5%; */
+    border: 4px solid rgb(140, 235, 222);
+    margin: .2em auto;
+    text-align: center;
+    background-image: linear-gradient(rgb(189, 231, 161) , rgb(144, 214, 216) , rgb(140, 131, 196));
+    height: 32em;
+    font-size: 21px;
+    border-radius: 30px;
+      }
+.telecommuting{
+    text-emphasis-style: bold;
+    margin: 10px;
+
+}
+.recriutmentIntro{
+  border: 1px solid rgb(237, 240, 231);
+  margin: 2.2em auto;
+  text-align: center;
+  background-image: linear-gradient(rgb(205, 228, 163) , rgb(223, 220, 215) , rgb(245, 233, 244));
+  height: 13em;
+  width: 700px;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 30px;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+}
+.recriutmentIntro:hover{
+ color: rgb(224, 51, 45);
+}
+.logo{
+  width: 20px;
+  border-radius: 20px;
+  height: 12px;
+  display: flex;
+}
+img{
+  background-repeat: no-repeat;
+  width: auto;
+  border-radius: 26px;
+  height: 140px;
+  margin-left: 64px;
+  margin-top: 20px;
+
+}
+#yes:hover{
+  color: red;
+
+}
+#no:hover{
+  color: red;
+
+}
