@@ -14,8 +14,8 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 from imblearn.over_sampling import SMOTE
 
 # --- CONFIGURATION ---
-DATA_PATH = 'data/emscad.csv'  # Path to your dataset
-USE_DUMMY_DATA = False          # Set to False if you have the real csv file
+DATA_PATH = 'data/emscad.csv'
+USE_DUMMY_DATA = False
 
 # --- 1. SETUP & PREPROCESSING ---
 def setup_nltk():
@@ -35,10 +35,9 @@ def load_data(filepath):
         try:
             df = pd.read_csv(filepath)
             
-            # --- QUANT FEATURE ENGINEERING ---
             # Instead of just 'description', we merge all text columns.
             # This captures signals like "urgent" in the title or "wire transfer" in requirements.
-            df = df.fillna('') # Handle missing values
+            df = df.fillna('')
             df['text_combined'] = (
                 df['title'] + " " + 
                 df['description'] + " " + 
@@ -46,14 +45,11 @@ def load_data(filepath):
                 df['company_profile']
             )
             
-            # Rename for compatibility with the rest of our script
-            df['description'] = df['text_combined'] 
-            
+            df['description'] = df['text_combined']
             return df[['description', 'fraudulent']]
             
         except FileNotFoundError:
             print(f"File not found at {filepath}. Switching to Dummy Data.")
-            # ... (rest of dummy data logic remains same)
 
 def preprocess_text(text):
     text = re.sub(r'[^a-zA-Z]', ' ', str(text).lower())
