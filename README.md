@@ -35,7 +35,7 @@ Fraud Recruitment Detector/
 ├── README.md                  # Project documentation
 ├── requirements.txt           # Python dependencies
 ├── data/
-│   └── fake_job_postings.csv # Dataset (or emscad.csv)
+│   └── emscad.csv
 └── outputs/                   # Generated visualizations and results
 ```
 
